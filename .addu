@@ -1,0 +1,23 @@
+$user = new User;
+$user->name = 'retool';
+$user->password = Hash::make('12345690');
+$user->email = 'romadoskin@yandex.ru';
+$user->save();
+
+
+
+# php artisan passport:client
+# 
+# Which user ID should the client be assigned to?:
+# > 1
+#   
+# What should we name the client?:
+# > romadoskin
+#     
+# Where should we redirect the request after authorization? [http://localhost/auth/callback]:
+# > no
+#       
+# New client created successfully.
+# Client ID: 3
+# Client secret: L1JuWMjwC0Ajzp7cEWIh8pwR7ApyfH2Rzv55Dnih
+       
